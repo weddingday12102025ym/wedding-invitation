@@ -114,7 +114,7 @@
         
         .save-the-date {
             text-align: center;
-            padding: 40px 30px;
+            padding: 70px 30px 70px 30px;
             height: 100%;
             display: flex;
             flex-direction: column;
@@ -293,6 +293,11 @@
             50% { opacity: 1; }
         }
         
+        @keyframes float {
+            0%, 100% { transform: translateY(0px) rotate(0deg); }
+            50% { transform: translateY(-10px) rotate(5deg); }
+        }
+        
         .decorative-element {
             position: absolute;
             top: 20px;
@@ -389,14 +394,14 @@
             </div>
             
             <div class="dress-code">
-                <div class="dress-code-title">БУДЕМО РАДІ, ЯКЩО ВИ ПІДТРИМАЄТЕ КОЛОРОВУ ГАМУ НАШОГО ВЕСІЛЛЯ</div>
+                <div class="dress-code-title">БУДЕМО РАДІ, ЯКЩО ВИ ПІДТРИМАЄТЕ КОЛЬОРОВУ ГАМУ НАШОГО ВЕСІЛЛЯ</div>
                 <div class="color-palette">
                     <div class="color-circle" style="background-color: #2c2c2c;"></div>
-                    <div class="color-circle" style="background-color: #8b6f47;"></div>
-                    <div class="color-circle" style="background-color: #7a6b5a;"></div>
-                    <div class="color-circle" style="background-color: #a39080;"></div>
-                    <div class="color-circle" style="background-color: #c4b5a0;"></div>
-                    <div class="color-circle" style="background-color: #8b9471;"></div>
+                    <div class="color-circle" style="background-color: #b5936b;"></div>
+                    <div class="color-circle" style="background-color: #9b8a7a;"></div>
+                    <div class="color-circle" style="background-color: #c5b8a8;"></div>
+                    <div class="color-circle" style="background-color: #e0d5c5;"></div>
+                    <div class="color-circle" style="background-color: #a8b58a;"></div>
                 </div>
             </div>
         </div>
@@ -464,18 +469,11 @@
             }
         }
         
-        // Додаємо CSS для анімації
-        const style = document.createElement('style');
-        style.textContent = `
-            @keyframes float {
-                0%, 100% { transform: translateY(0px) rotate(0deg); }
-                50% { transform: translateY(-10px) rotate(5deg); }
-            }
-        `;
-        document.head.appendChild(style);
-        
         // Ініціалізуємо декоративні елементи
         addFloatingElements();
+    </script>
+</body>
+</html>
     </script>
 </body>
 </html>
